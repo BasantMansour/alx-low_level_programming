@@ -19,7 +19,7 @@ int main(void)
 		printf("%i is positive\n", n);
 	eles if (n == 0)
 		printf("%i is zero\n", n);
-	eles
+	eles if (n < 0)
 		printf("%i is negative\n", n);
 	return (0);
 }
