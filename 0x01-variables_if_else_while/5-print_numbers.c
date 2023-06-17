@@ -7,6 +7,7 @@
  *
  * Return: Always 0 (Success)
 */
+
 int main(void)
 {
 	int digit = 0;
@@ -17,5 +18,6 @@ int main(void)
 		digit++;
 	}
 	printf("\n");
+
 	return (0);
 }
