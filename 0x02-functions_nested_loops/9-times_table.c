@@ -19,11 +19,15 @@ void times_table(void)
 			prod = num * mlt;
 
 			if (prod <= 9)
+			{	
 				_putchar(' ');
 				_putchar(prod + 48);
+			}
 			else
+			{
 				_putchar((prod / 10 ) + 48);
 				_putchar((prod % 10 ) + 48);
+			}
 		}
 		_putchar('\n');
 	}
