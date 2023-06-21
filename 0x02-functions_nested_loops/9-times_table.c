@@ -6,7 +6,7 @@ include "main.h
 
 void times_table(void)
 {
-	int num, mlt, pro;
+	int num, mlt, prod;
 
 	for (num = 0; num <= 9; num++)
 	{
@@ -16,12 +16,14 @@ void times_table(void)
 			_putchar(',');
 			_putchar(' ');
 
-			pro = num * mlt;
+			prod = num * mlt;
 
-			if (pro <= 9)
+			if (prod <= 9)
 				_putchar(' ');
+				_putchar(prod + 48);
 			else
-				_putchar(pro);
+				_putchar((prod / 10 ) + 48);
+				_putchar((prod % 10 ) + 48);
 		}
 		_putchar('\n');
 	}
