@@ -1,7 +1,6 @@
+#include <stdio.h>
 #ifndef MAIN_h
 #define MAIN_h
-
-#include <stdio.h>
 
 void times_table(void);
 int add(int, int);
