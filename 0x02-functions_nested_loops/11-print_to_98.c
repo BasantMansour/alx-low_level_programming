@@ -10,7 +10,7 @@ void print_to_98(int n)
 {
 	int count;
 
-	for (count = n; count != 98; count)
+	for (count = n; count != 98;)
 	{
 		printf("%d, ", count);
 		if (count < 98)
