@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 
+void puts2(char *str);
 void rev_string(char *s);
 void print_rev(char *s);
 void _puts(char *str);
