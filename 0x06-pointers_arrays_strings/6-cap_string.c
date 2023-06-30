@@ -10,7 +10,7 @@
 int isLower(char m)
 
 {
-        return (m >= 97 && m <= 122);
+	return (m >= 97 && m <= 122);
 }
 
 /**
@@ -21,13 +21,13 @@ int isLower(char m)
 
 int isDelimiter(char m)
 {
-        int r;
-        char delimiter[] = " \t\n,.!?\"(){}";
+	int r;
+	char delimiter[] = " \t\n,.!?\"(){}";
 
-        for (r = 0; r < 12; r++)
-                if (m == delimiter[r])
-                        return (1);
-        return (0);
+	for (r = 0; r < 12; r++)
+		if (m == delimiter[r])
+			return (1);
+	return (0);
 }
 
 /**
