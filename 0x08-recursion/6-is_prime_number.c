@@ -28,7 +28,7 @@ int check_prime(int n, int deep)
 
 	if (deep >= n && n > 1)
 		return (1);
-	else if (n % deed == 0 || n <= 1)
+	else if (n % deep == 0 || n <= 1)
 		return (0);
 	else
 		return (check_prime(n, deep + 1));
