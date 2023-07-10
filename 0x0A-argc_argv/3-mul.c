@@ -2,9 +2,9 @@
 
 /**
  * main print sum of 2 number.
- * @argc:number of the command line.
- * @argv:pointer to an array of command line.
- * Return:0-success, non-zero-fail.
+ * @argc: number of the command line.
+ * @argv: pointer to an array of command line.
+ * Return: 0-success, non-zero-fail.
 */
 
 int main(int argc, char *argv[])
