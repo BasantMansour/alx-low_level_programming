@@ -10,7 +10,7 @@ int _strlen(char *b)
 {
 	int size = 0;
 
-	for (; s[size] != '\0'; size++)
+	for (; b[size] != '\0'; size++)
 	;
 	return (size);
 }
