@@ -28,5 +28,5 @@ char *_strdup(char *str)
 		for (; p < size; p++)
 			n[p] = str[p];
 	}
-	return (p);
+	return (n);
 }
