@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * create_array - creates an array of char it spacific char
+ * *create_array - creates an array of char it spacific char
  * @size: size of the array
  * @c: char to intialize
  * Return: pointer to the array intialize or Null
