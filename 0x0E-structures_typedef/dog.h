@@ -5,6 +5,7 @@
  * struct dog - it is dog struct.
  * @name: it is name.
  * @age: it is age.
+ * @owner: the owner name.
 */
 
 struct dog
