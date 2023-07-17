@@ -6,6 +6,7 @@
  * @name: it is name.
  * @age: it is age.
  * @owner: the owner name.
+ * @d:dog to int.
 */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
