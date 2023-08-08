@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 
 /**
  * free_grid - this free to the grid
@@ -10,9 +10,9 @@
 
 void free_grid(int **grid, int height)
 {
-	int i = 0;
+	int h = 0;
 
-	for (; i < height; i++)
-		free(grid[i]);
+	for (; h < height; h++)
+		free(grid[h]);
 	free(grid);
 }
