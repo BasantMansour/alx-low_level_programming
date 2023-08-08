@@ -20,6 +20,7 @@ int last_index(char *s)
 
 /**
  * is_palindrome - check if a string is palindrome
+ * check - check the palindrome if a strinng
  * @s: string to check
  * Return: 0 or 1
 */
@@ -28,7 +29,7 @@ int is_palindrome(char *s)
 {
 	int end = last_index(s);
 
-	return check(s, 0, end % 2, end - 1);
+	return (check(s, 0, end % 2, end - 1));
 }
 
 /**
