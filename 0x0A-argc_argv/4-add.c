@@ -3,7 +3,7 @@
 
 /**
  * main - this all starts here
- * @argv: this number of argument
+ * @argc: this number of argument
  * @argv: this is array of pointers
  * Return: 0
 */
