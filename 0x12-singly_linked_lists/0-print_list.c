@@ -3,6 +3,8 @@
 /**
  * _strlen - this return length of string
  * @s: this is string of length to cheak
+ *
+ * Return: integer length of string
 */
 
 int _strlen(char *s)
@@ -19,6 +21,8 @@ int _strlen(char *s)
 /**
  * print_list - this make to print a linked list
  * @h: this is pointer of the first node
+ *
+ * Return: the size of the list
 */
 
 size_t print_list(const list_t *h)
