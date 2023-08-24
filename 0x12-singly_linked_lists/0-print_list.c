@@ -8,13 +8,13 @@
  * Return: integer length of string
 */
 
-int _strlen(char *s)
+int _strlen(char *o)
 {
 	int y = 0;
 
-	if (!s)
+	if (!o)
 		return (0);
-	while (*s++)
+	while (*o++)
 		y++;
 	return (y);
 }
