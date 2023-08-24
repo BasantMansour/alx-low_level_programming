@@ -5,11 +5,18 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * struct list_s - this singly linked list
+ * @str: this is string
+ * @len: this length of string
+ * @next: this point of the next node
+*/
+
 typedef struct list_s
 {
-    char *str;
-    unsigned int len;
-    struct list_s *next;
+	char *str;
+	unsigned int len;
+	struct list_s *next;
 } list_t;
 
 int _strlen(char *s);
