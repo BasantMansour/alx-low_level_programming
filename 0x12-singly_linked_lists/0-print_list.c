@@ -28,19 +28,13 @@ int _strlen(char *o)
 
 size_t print_list(const list_t *h)
 {
-	size_t nod = 0;
+	size_t y = 0;
 
 	while (h)
 	{
-		if (h->str == NULL)
-			printf("[0] (nil)\n");
-
-		else
-			printf("[%d] %s\n", h->len, h->str);
-
-		nod++;
+		printf("[%d] %s\n", _strlen(h->str), h->str ? h->str : "(nil)");
 		h = h->next;
+		y++;
 	}
-
-	return (nod);
+	return (y);
 }
