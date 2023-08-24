@@ -2,7 +2,7 @@
 
 
 /**
- * sum_them_all - this is sums variable arguments
+ * sum_them_all - this is sums of all pointers
  * @n: its a number of argument
  * @...: this integers of sum
  *
@@ -11,14 +11,16 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-	int d = 0, y = n;
-	va_list ap;
+	unsigned int d = 0, s = 0;
+	va_list pp;
 
-	if (!n)
+	if (n == 0)
 		return (0);
-	va_start(ap, n);
-	while (y--)
-		d += va_arg(ap, int);
-	va_end(ap);
-	return (d);
+	va_start(pp, n);
+	for (d = 0, d < n, d++)
+	{
+		s = s + va_arg(pp, unsigned int);
+	}
+	va_end(pp);
+	return (s);
 }
