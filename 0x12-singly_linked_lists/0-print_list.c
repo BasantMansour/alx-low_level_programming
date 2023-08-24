@@ -3,7 +3,7 @@
 
 /**
  * _strlen - this return length of string
- * @s: this is string of length to cheak
+ * @o: this is string of length to cheak
  *
  * Return: integer length of string
 */
@@ -28,13 +28,19 @@ int _strlen(char *o)
 
 size_t print_list(const list_t *h)
 {
-	size_t y = 0;
+	size_t nod = 0;
 
 	while (h)
 	{
-		printf("[%d] %s\n", _strlen(h->str), h->str ? h->str : "(nil)");
+		if (h->str == NULL)
+			printf("[0] (nil)\n");
+
+		else
+			printf("[%d] %s\n", h->len, h->str);
+
+		nod++;
 		h = h->next;
-		y++;
 	}
-	return (y);
+
+	return (nod);
 }
