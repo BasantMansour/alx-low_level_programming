@@ -18,6 +18,7 @@ int sum_them_all(const unsigned int n, ...)
 		return (0);
 
 	va_start(pp, n);
+
 	for (d = 0; d < n; d++)
 	{
 		s = s + va_arg(pp, unsigned int);
