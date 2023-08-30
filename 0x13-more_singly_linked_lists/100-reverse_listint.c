@@ -1,25 +1,25 @@
 #include "lists.h"
 
 /**
- * free_listint2 - this is Frees a listint_t list.
- * @head: this a pointer to the address of the
- *        head of the listint_t list.
- *
- * Description: Sets the head to NULL.
- */
-void free_listint2(listint_t **head)
+ * reverse_listint - this reverses a listint_t linked list.
+ * @head: this pointer to the list.
+ * Return: thispointer to the first node of the reversed list
+ **/
+listint_t *reverse_listint(listint_t **head)
 {
-	listint_t *tmp;
+	listint_t *prev_node, *next_node;
 
-	if (head == NULL)
-		return;
+	if (!head)
+		return (NULL);
 
+	prev_node = NULL;
 	while (*head)
 	{
-		tmp = (*head)->next;
-		free(*head);
-		*head = tmp;
+		next_node = (*head)->next;
+		(*head)->next = prev_node;
+		prev_node = *head;
+		*head = next_node;
 	}
-
-	head = NULL;
+	*head = prev_node;
+	return (*head);
 }
