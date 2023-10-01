@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * print_square - this print square using the character #
- *
+ * print_square - this print square using
+ *			the character #
  * @size: this is a size of square
  *
  * Return: 0 always
