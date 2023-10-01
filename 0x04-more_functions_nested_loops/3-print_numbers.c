@@ -15,5 +15,6 @@ void print_numbers(void)
 		_putchar(nun + 48);
 		nun++;
 	} while (nun >= 0 && nun <= 9);
-	_putchar('\n')
+
+	_putchar('\n');
 }
